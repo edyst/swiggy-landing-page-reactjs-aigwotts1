@@ -1,0 +1,193 @@
+.FirstSection {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* height: 540px; */
+  height: auto;
+}
+.div-padding {
+  padding-top: 40px;
+  position: relative;
+}
+
+.LeftSide {
+  position: relative;
+  padding-right: 20px;
+  padding-left: 50px;
+  /* width: 50%; */
+  /* width: 50vw; */
+  margin-right: 50%;
+  height: auto;
+}
+
+.LeftSide h1 {
+  /* height: 48px; */
+  position: relative;
+  text-align: start;
+  margin-top: 100px;
+  /* margin-bottom: 0; */
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.45px;
+}
+
+.LeftSide h2 {
+  font-size: 24px;
+  font-weight: 300;
+  /* width: 600px; */
+  text-align: start;
+
+  /* margin-top: 0; */
+  /* margin-bottom: 0; */
+  line-height: 40px;
+  letter-spacing: -0.3px;
+  color: #686b78;
+}
+.flex-row {
+  display: flex;
+  padding-top: 20px;
+}
+.search {
+  display: flex;
+  border: 1px solid #ccc;
+  height: 55px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.search-btn {
+  width: 20%;
+  border: none;
+  background-color: #fc9109;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.search-input {
+  height: 30px;
+  border: none;
+  width: 60%;
+  padding-left: 20px;
+  outline: none;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.locate-me {
+  display: flex;
+  width: 100px;
+  border: none;
+  color: gray;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.locate-me:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.LeftSide h3 {
+  font-weight: 400;
+  font-size: 15px;
+  color: #a9abb2;
+  margin: 30px 0 10px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+}
+
+
+.city {
+  padding-right: 20px;
+  font-size: 12px;
+  margin-right: 8px;
+  color: #686b78;
+}
+.city:nth-of-type(odd) {
+  font-weight: bold;
+}
+.RightSide {
+  background-image: url("https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Dinner1-new_s93yyf");
+  position: absolute;
+  left: 60%;
+  right: 0;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  background-position: 100%;
+  top: 0;
+  background-color: hsla(26, 5%, 70%, 0.2);
+}
+.animation-heading{
+  font-size: 50px;
+  font-size: bold;
+}
+.animation-heading::after{
+	content: 'Hungry?';
+	animation: yourAnimation 20.4s ease infinite normal none;
+    position:relative;
+}
+@keyframes yourAnimation{
+	0%     {content: "Hungry?"; opacity: 0; bottom: -30px;}
+    4.15%  {content: "Hungry?"; opacity: 1; bottom:0px;}
+    15.77% {content: "Hungry?"; opacity: 1; bottom:0px;}
+    16.65% {content: "Hungry?"; opacity: 0; bottom:20px; }
+	16.66% {content: "Unexpected guests?"; opacity:0; bottom:-30px}
+    20.81% {content: "Unexpected guests?"; opacity:1; bottom:0px  }
+    32.43% {content: "Unexpected guests?"; opacity:1; bottom:0px  }
+    33.32% {content: "Unexpected guests?"; opacity:0; bottom:20px }
+	33.33% {content: "Movie marathon?"; opacity:0; bottom:-30px}
+    37.48% {content: "Movie marathon?"; opacity:1; bottom:0px  }
+    49.1%  {content: "Movie marathon?"; opacity:1; bottom:0px  }
+    49.97% {content: "Movie marathon?"; opacity:0; bottom:20px }
+	49.98% {content: "Game night?"; opacity:0; bottom:-30px}
+    54.13% {content: "Game night?"; opacity:1; bottom:0px  }
+    65.75% {content: "Game night?"; opacity:1; bottom:0px  }
+    66.63% {content: "Game night?"; opacity:0; bottom:20px }
+	66.64% {content: "Cooking gone Wrong?"; opacity:0; bottom:-30px}
+    70.79% {content: "Cooking gone Wrong?"; opacity:1; bottom:0px  }
+    82.41% {content: "Cooking gone Wrong?"; opacity:1; bottom:0px  }
+    83.29% {content: "Cooking gone Wrong?"; opacity:0; bottom:20px }
+    83.30% {content: "Late night at office?"; opacity:0; bottom:-30px}
+    87.45% {content: "Late night at office?"; opacity:1; bottom:0px  }
+    99.07% {content: "Late night at office?"; opacity:1; bottom:0px  }
+    99.99% {content: "Late night at office?"; opacity:0; bottom:20px }
+}
+@media screen and (max-width: 850px) {
+  .RightSide {
+    display: none;
+    width: 0px;
+  }
+  .LeftSide {
+    width: 100vw;
+    margin: 0%;
+    height: auto;
+  }
+  .LeftSide ul {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .search-btn {
+    width: 100%;
+    height: 50px;
+  }
+  .locate-me {
+    display: none;
+  }
+  .flex-row {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
